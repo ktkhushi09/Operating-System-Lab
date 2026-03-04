@@ -35,3 +35,4 @@ int main()
     printf("Second smallest element = %d\n", secondSmallest);
     return 0;
 }
+
