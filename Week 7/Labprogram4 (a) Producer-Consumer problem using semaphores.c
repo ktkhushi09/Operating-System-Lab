@@ -1,21 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-// Semaphore and buffer variables
 int mutex = 1, full = 0, empty = 3;
-int x = 0; // item count
-
-// wait function
+int x = 0; 
 void wait() {
     mutex--;
 }
-
-// signal function
 void signal() {
     mutex++;
 }
-
-// Producer function
 void producer() {
     wait();
     full++;
@@ -24,8 +16,6 @@ void producer() {
     printf("Producer has produced: Item %d\n", x);
     signal();
 }
-
-// Consumer function
 void consumer() {
     wait();
     if(full > 0) {
@@ -38,15 +28,12 @@ void consumer() {
     }
     signal();
 }
-
-// Main function with menu
 int main() {
     int choice;
     while(1) {
         printf("\nEnter 1.Producer 2.Consumer 3.Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
-
         switch(choice) {
             case 1:
                 if(empty == 0)
