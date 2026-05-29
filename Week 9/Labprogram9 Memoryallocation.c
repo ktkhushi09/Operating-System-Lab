@@ -60,7 +60,7 @@ int main()
     }
     for(i = 0; i < m; i++)
         temp[i] = b[i];
-    printf("\n--- Worst Fit ---\n");
+    printf("\nWorst Fit \n");
     printf("Process No.\tProcess Size\tBlock No.\n");
     for(i = 0; i < n; i++)
     {
