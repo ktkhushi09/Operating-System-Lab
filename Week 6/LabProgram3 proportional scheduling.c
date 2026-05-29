@@ -19,7 +19,7 @@ int main() {
     }
     printf("Enter total TIME QUANTUM: ");
     scanf("%d", &TIME_QUANTUM);
-    printf("\n--- Proportional Share Scheduling ---\n");
+    printf("\nProportional Share Scheduling \n");
     while (1) {
         int all_done = 1;
         for (int i = 0; i < n; i++) {
