@@ -10,11 +10,9 @@ void sortByPeriod(int id[], float C[], float T[], int n) {
                 tempId = id[i];
                 id[i] = id[j];
                 id[j] = tempId;
-
                 tempC = C[i];
                 C[i] = C[j];
                 C[j] = tempC;
-
                 tempT = T[i];
                 T[i] = T[j];
                 T[j] = tempT;
